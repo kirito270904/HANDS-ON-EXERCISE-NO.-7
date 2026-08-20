@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Javascript 2</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Javascript Web Output #2</h1>
+
+  <form id="recordForm">
+    <div class="form-row">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" autocomplete="off">
+    </div>
+    <div class="form-row">
+      <label for="middleName">Middle Name:</label>
+      <input type="text" id="middleName" autocomplete="off">
+    </div>
+    <div class="form-row">
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" autocomplete="off">
+    </div>
+    <div class="form-row">
+      <label for="age">Age:</label>
+      <input type="number" id="age" autocomplete="off">
+    </div>
+
+    <div class="form-buttons">
+      <button type="submit" id="insertBtn">Insert</button>
+      <button type="button" id="clearBtn">Clear</button>
+    </div>
+  </form>
+
+  <fieldset id="recordsFieldset">
+    <legend>Records</legend>
+
+    <p id="noRecords" class="no-records">No Records...</p>
+
+    <table id="recordsTable">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Middle Name</th>
+          <th>Last Name</th>
+          <th>Age</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="recordsBody">
+      </tbody>
+    </table>
+  </fieldset>
+
+  <div class="table-controls">
+    <button type="button" id="clearRecordsBtn">Clear Records</button>
+
+    <span class="sort-label">Sort by:</span>
+    <select id="sortField">
+      <option value="">Please select</option>
+      <option value="firstName">First Name</option>
+      <option value="lastName">Last Name</option>
+    </select>
+
+    <select id="sortOrder">
+      <option value="">Please select</option>
+      <option value="asc">A-Z</option>
+      <option value="desc">Z-A</option>
+    </select>
+
+    <button type="button" id="saveBtn">Save to Local Storage</button>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

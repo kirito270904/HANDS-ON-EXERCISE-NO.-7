@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+  color: #111;
+}
+
+h1 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.form-row {
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.form-row label {
+  width: 90px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.form-row input {
+  width: 180px;
+  padding: 2px 4px;
+  font-size: 13px;
+  border: 1px solid #888;
+}
+
+.form-buttons {
+  margin: 8px 0 20px 90px;
+}
+
+.form-buttons button,
+.table-controls button,
+.table-controls select {
+  font-size: 13px;
+  padding: 3px 10px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+fieldset#recordsFieldset {
+  border: 1px solid #333;
+  width: 510px;
+  padding: 10px;
+  min-height: 40px;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 4px;
+}
+
+.no-records {
+  color: red;
+  font-size: 13px;
+  margin: 2px 0;
+}
+
+table#recordsTable {
+  border-collapse: collapse;
+  width: 100%;
+  display: none;
+}
+
+table#recordsTable.has-rows {
+  display: table;
+}
+
+table#recordsTable th,
+table#recordsTable td {
+  border: 1px solid #333;
+  padding: 4px 8px;
+  font-size: 13px;
+  text-align: left;
+}
+
+table#recordsTable th {
+  font-weight: bold;
+}
+
+table#recordsTable td button {
+  font-size: 12px;
+  padding: 1px 6px;
+  margin-right: 4px;
+  cursor: pointer;
+}
+
+.table-controls {
+  margin-top: 10px;
+  width: 510px;
+  display: flex;
+  align-items: center;
+}
+
+.sort-label {
+  font-size: 13px;
+  margin: 0 6px;
+}
